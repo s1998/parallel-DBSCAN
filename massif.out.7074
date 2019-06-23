@@ -1,0 +1,1627 @@
+desc: (none)
+cmd: python3 dbscan_sk.py
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=1095090108
+mem_heap_B=11255028
+mem_heap_extra_B=226732
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2249229473
+mem_heap_B=36573259
+mem_heap_extra_B=431861
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=3235670725
+mem_heap_B=40241579
+mem_heap_extra_B=436045
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=4345936960
+mem_heap_B=44370235
+mem_heap_extra_B=440765
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=5985550432
+mem_heap_B=50370011
+mem_heap_extra_B=447621
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=6695238277
+mem_heap_B=53048763
+mem_heap_extra_B=450661
+mem_stacks_B=0
+heap_tree=detailed
+n8: 53048763 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 19745200 0x57BAD3: PyList_Append (in /usr/bin/python3.6)
+  n2: 19737584 0x5076CF: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+   n1: 19737584 0x502207: ??? (in /usr/bin/python3.6)
+    n1: 19737584 0x502F3B: ??? (in /usr/bin/python3.6)
+     n1: 19737584 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+      n2: 19737584 0x504C26: ??? (in /usr/bin/python3.6)
+       n1: 19724432 0x506391: PyEval_EvalCode (in /usr/bin/python3.6)
+        n1: 19724432 0x634D50: ??? (in /usr/bin/python3.6)
+         n1: 19724432 0x634E08: PyRun_FileExFlags (in /usr/bin/python3.6)
+          n1: 19724432 0x6385C6: PyRun_SimpleFileExFlags (in /usr/bin/python3.6)
+           n1: 19724432 0x639158: Py_Main (in /usr/bin/python3.6)
+            n0: 19724432 0x4A6F0E: main (in /usr/bin/python3.6)
+       n0: 13152 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 7616 in 11 places, all below massif's threshold (1.00%)
+ n3: 19528986 0x53B7DD: PyUnicode_New (in /usr/bin/python3.6)
+  n2: 14704238 0x528720: PyUnicode_Substring (in /usr/bin/python3.6)
+   n1: 14570213 0x4B2006: ??? (in /usr/bin/python3.6)
+    n1: 14570213 0x4B24AB: ??? (in /usr/bin/python3.6)
+     n1: 14570213 0x585782: ??? (in /usr/bin/python3.6)
+      n1: 14570213 0x565BCF: _PyCFunction_FastCallDict (in /usr/bin/python3.6)
+       n1: 14570213 0x5A375F: _PyObject_FastCallDict (in /usr/bin/python3.6)
+        n1: 14570213 0x5A3D42: _PyObject_CallMethodId_SizeT (in /usr/bin/python3.6)
+         n1: 14570213 0x5D608B: ??? (in /usr/bin/python3.6)
+          n1: 14570213 0x502D6D: ??? (in /usr/bin/python3.6)
+           n1: 14570213 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+            n1: 14570213 0x504C26: ??? (in /usr/bin/python3.6)
+             n1: 14570213 0x506391: PyEval_EvalCode (in /usr/bin/python3.6)
+              n1: 14570213 0x634D50: ??? (in /usr/bin/python3.6)
+               n1: 14570213 0x634E08: PyRun_FileExFlags (in /usr/bin/python3.6)
+                n1: 14570213 0x6385C6: PyRun_SimpleFileExFlags (in /usr/bin/python3.6)
+                 n1: 14570213 0x639158: Py_Main (in /usr/bin/python3.6)
+                  n0: 14570213 0x4A6F0E: main (in /usr/bin/python3.6)
+   n0: 134025 in 8 places, all below massif's threshold (1.00%)
+  n2: 4266935 0x533528: _PyUnicode_JoinArray (in /usr/bin/python3.6)
+   n1: 4189230 0x5375DD: PyUnicode_Join (in /usr/bin/python3.6)
+    n1: 4189230 0x4B22A2: ??? (in /usr/bin/python3.6)
+     n1: 4189230 0x4B24AB: ??? (in /usr/bin/python3.6)
+      n1: 4189230 0x585782: ??? (in /usr/bin/python3.6)
+       n1: 4189230 0x565BCF: _PyCFunction_FastCallDict (in /usr/bin/python3.6)
+        n1: 4189230 0x5A375F: _PyObject_FastCallDict (in /usr/bin/python3.6)
+         n1: 4189230 0x5A3D42: _PyObject_CallMethodId_SizeT (in /usr/bin/python3.6)
+          n1: 4189230 0x5D608B: ??? (in /usr/bin/python3.6)
+           n1: 4189230 0x502D6D: ??? (in /usr/bin/python3.6)
+            n1: 4189230 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+             n1: 4189230 0x504C26: ??? (in /usr/bin/python3.6)
+              n1: 4189230 0x506391: PyEval_EvalCode (in /usr/bin/python3.6)
+               n1: 4189230 0x634D50: ??? (in /usr/bin/python3.6)
+                n1: 4189230 0x634E08: PyRun_FileExFlags (in /usr/bin/python3.6)
+                 n1: 4189230 0x6385C6: PyRun_SimpleFileExFlags (in /usr/bin/python3.6)
+                  n1: 4189230 0x639158: Py_Main (in /usr/bin/python3.6)
+                   n0: 4189230 0x4A6F0E: main (in /usr/bin/python3.6)
+   n0: 77705 in 1 place, below massif's threshold (1.00%)
+  n0: 557813 in 7 places, all below massif's threshold (1.00%)
+ n1: 4949202 0x53EB0E: ??? (in /usr/bin/python3.6)
+  n3: 4949202 0x4EA430: ??? (in /usr/bin/python3.6)
+   n2: 3937345 0x4EA4FE: ??? (in /usr/bin/python3.6)
+    n2: 3676283 0x4EA924: ??? (in /usr/bin/python3.6)
+     n2: 3564663 0x4EA60D: ??? (in /usr/bin/python3.6)
+      n1: 3096091 0x4EB2F4: ??? (in /usr/bin/python3.6)
+       n1: 3096091 0x4EC1F5: ??? (in /usr/bin/python3.6)
+        n1: 3096091 0x502D6D: ??? (in /usr/bin/python3.6)
+         n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+          n1: 3096091 0x504C26: ??? (in /usr/bin/python3.6)
+           n1: 3096091 0x50253E: ??? (in /usr/bin/python3.6)
+            n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+             n1: 3096091 0x50763F: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+              n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+               n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                 n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+                  n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                   n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                    n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+                     n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                      n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                       n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+                        n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                         n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                          n1: 3096091 0x501943: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+                           n1: 3096091 0x5A36EF: _PyObject_FastCallDict (in /usr/bin/python3.6)
+                            n1: 3096091 0x59662C: _PyObject_CallMethodIdObjArgs (in /usr/bin/python3.6)
+                             n2: 3096091 0x4EE84B: PyImport_ImportModuleLevelObject (in /usr/bin/python3.6)
+                              n0: 2509435 0x50896A: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                              n0: 586656 0x510DC2: ??? (in /usr/bin/python3.6)
+      n0: 468572 in 1 place, below massif's threshold (1.00%)
+     n0: 111620 in 6 places, all below massif's threshold (1.00%)
+    n0: 261062 in 1 place, below massif's threshold (1.00%)
+   n2: 993000 0x4EA522: ??? (in /usr/bin/python3.6)
+    n2: 991922 0x4EA924: ??? (in /usr/bin/python3.6)
+     n2: 953272 0x4EA60D: ??? (in /usr/bin/python3.6)
+      n1: 950479 0x4EB2F4: ??? (in /usr/bin/python3.6)
+       n1: 950479 0x4EC1F5: ??? (in /usr/bin/python3.6)
+        n1: 950479 0x502D6D: ??? (in /usr/bin/python3.6)
+         n1: 950479 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+          n1: 950479 0x504C26: ??? (in /usr/bin/python3.6)
+           n1: 950479 0x50253E: ??? (in /usr/bin/python3.6)
+            n1: 950479 0x502F3B: ??? (in /usr/bin/python3.6)
+             n1: 950479 0x50763F: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+              n1: 950479 0x502207: ??? (in /usr/bin/python3.6)
+               n1: 950479 0x502F3B: ??? (in /usr/bin/python3.6)
+                n1: 950479 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                 n1: 950479 0x502207: ??? (in /usr/bin/python3.6)
+                  n1: 950479 0x502F3B: ??? (in /usr/bin/python3.6)
+                   n1: 950479 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                    n1: 950479 0x502207: ??? (in /usr/bin/python3.6)
+                     n1: 950479 0x502F3B: ??? (in /usr/bin/python3.6)
+                      n1: 950479 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                       n1: 950479 0x502207: ??? (in /usr/bin/python3.6)
+                        n1: 950479 0x502F3B: ??? (in /usr/bin/python3.6)
+                         n1: 950479 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                          n1: 950479 0x501943: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+                           n1: 950479 0x5A36EF: _PyObject_FastCallDict (in /usr/bin/python3.6)
+                            n1: 950479 0x59662C: _PyObject_CallMethodIdObjArgs (in /usr/bin/python3.6)
+                             n2: 950479 0x4EE84B: PyImport_ImportModuleLevelObject (in /usr/bin/python3.6)
+                              n0: 863424 0x50896A: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                              n0: 87055 in 1 place, below massif's threshold (1.00%)
+      n0: 2793 in 1 place, below massif's threshold (1.00%)
+     n0: 38650 in 5 places, all below massif's threshold (1.00%)
+    n0: 1078 in 1 place, below massif's threshold (1.00%)
+   n0: 18857 in 4 places, all below massif's threshold (1.00%)
+ n2: 3897520 0x5A89E3: ??? (in /usr/bin/python3.6)
+  n1: 3802512 0x56D072: ??? (in /usr/bin/python3.6)
+   n4: 3802512 0x56D8C2: ??? (in /usr/bin/python3.6)
+    n2: 1312968 0x574D34: PyDict_SetDefault (in /usr/bin/python3.6)
+     n2: 1310744 0x523DB8: PyUnicode_InternInPlace (in /usr/bin/python3.6)
+      n2: 1310744 0x4EA453: ??? (in /usr/bin/python3.6)
+       n1: 1310744 0x4EA60D: ??? (in /usr/bin/python3.6)
+        n1: 1310744 0x4EA950: ??? (in /usr/bin/python3.6)
+         n1: 1310744 0x4EA60D: ??? (in /usr/bin/python3.6)
+          n1: 1310744 0x4EB2F4: ??? (in /usr/bin/python3.6)
+           n1: 1310744 0x4EC1F5: ??? (in /usr/bin/python3.6)
+            n1: 1310744 0x502D6D: ??? (in /usr/bin/python3.6)
+             n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+              n1: 1310744 0x504C26: ??? (in /usr/bin/python3.6)
+               n1: 1310744 0x50253E: ??? (in /usr/bin/python3.6)
+                n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                 n1: 1310744 0x50763F: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                  n1: 1310744 0x502207: ??? (in /usr/bin/python3.6)
+                   n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                    n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                     n1: 1310744 0x502207: ??? (in /usr/bin/python3.6)
+                      n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                       n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                        n1: 1310744 0x502207: ??? (in /usr/bin/python3.6)
+                         n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                          n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                           n1: 1310744 0x502207: ??? (in /usr/bin/python3.6)
+                            n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                             n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                              n0: 1310744 0x501943: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+       n0: 0 in 3 places, all below massif's threshold (1.00%)
+      n0: 0 in 2 places, all below massif's threshold (1.00%)
+     n0: 2224 in 3 places, all below massif's threshold (1.00%)
+    n2: 1308960 0x56E971: PyDict_SetItem (in /usr/bin/python3.6)
+     n1: 775120 0x5073A3: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+      n2: 775120 0x504C26: ??? (in /usr/bin/python3.6)
+       n2: 772336 0x511D76: ??? (in /usr/bin/python3.6)
+        n1: 770128 0x56617C: PyCFunction_Call (in /usr/bin/python3.6)
+         n1: 770128 0x50BB64: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+          n1: 770128 0x504C26: ??? (in /usr/bin/python3.6)
+           n1: 770128 0x50253E: ??? (in /usr/bin/python3.6)
+            n1: 770128 0x502F3B: ??? (in /usr/bin/python3.6)
+             n1: 770128 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+              n1: 770128 0x502207: ??? (in /usr/bin/python3.6)
+               n1: 770128 0x502F3B: ??? (in /usr/bin/python3.6)
+                n1: 770128 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                 n1: 770128 0x502207: ??? (in /usr/bin/python3.6)
+                  n1: 770128 0x502F3B: ??? (in /usr/bin/python3.6)
+                   n1: 770128 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                    n1: 770128 0x502207: ??? (in /usr/bin/python3.6)
+                     n1: 770128 0x502F3B: ??? (in /usr/bin/python3.6)
+                      n1: 770128 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                       n1: 770128 0x501943: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+                        n1: 770128 0x5A36EF: _PyObject_FastCallDict (in /usr/bin/python3.6)
+                         n1: 770128 0x59662C: _PyObject_CallMethodIdObjArgs (in /usr/bin/python3.6)
+                          n2: 770128 0x4EE84B: PyImport_ImportModuleLevelObject (in /usr/bin/python3.6)
+                           n2: 636904 0x50896A: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                            n2: 634696 0x504C26: ??? (in /usr/bin/python3.6)
+                             n1: 630784 0x511D76: ??? (in /usr/bin/python3.6)
+                              n0: 630784 0x56617C: PyCFunction_Call (in /usr/bin/python3.6)
+                             n0: 3912 in 4 places, all below massif's threshold (1.00%)
+                            n0: 2208 in 1 place, below massif's threshold (1.00%)
+                           n0: 133224 in 3 places, all below massif's threshold (1.00%)
+        n0: 2208 in 1 place, below massif's threshold (1.00%)
+       n0: 2784 in 3 places, all below massif's threshold (1.00%)
+     n0: 533840 in 107 places, all below massif's threshold (1.00%)
+    n0: 624408 in 3 places, all below massif's threshold (1.00%)
+    n1: 556176 0x56E3C1: ??? (in /usr/bin/python3.6)
+     n0: 556176 in 13 places, all below massif's threshold (1.00%)
+  n0: 95008 in 4 places, all below massif's threshold (1.00%)
+ n2: 1670008 0x554D9A: PyType_GenericAlloc (in /usr/bin/python3.6)
+  n2: 1663960 0x54FADC: ??? (in /usr/bin/python3.6)
+   n2: 1426192 0x5553B3: ??? (in /usr/bin/python3.6)
+    n1: 1209968 0x5A337A: _PyObject_FastCallDict (in /usr/bin/python3.6)
+     n1: 1209968 0x510F73: ??? (in /usr/bin/python3.6)
+      n2: 1209968 0x5030D3: ??? (in /usr/bin/python3.6)
+       n1: 1209040 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+        n2: 1209040 0x504C26: ??? (in /usr/bin/python3.6)
+         n2: 1080736 0x511D76: ??? (in /usr/bin/python3.6)
+          n1: 1070528 0x56617C: PyCFunction_Call (in /usr/bin/python3.6)
+           n1: 1070528 0x50BB64: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+            n1: 1070528 0x504C26: ??? (in /usr/bin/python3.6)
+             n1: 1070528 0x50253E: ??? (in /usr/bin/python3.6)
+              n1: 1070528 0x502F3B: ??? (in /usr/bin/python3.6)
+               n1: 1070528 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                n1: 1070528 0x502207: ??? (in /usr/bin/python3.6)
+                 n1: 1070528 0x502F3B: ??? (in /usr/bin/python3.6)
+                  n1: 1070528 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                   n1: 1070528 0x502207: ??? (in /usr/bin/python3.6)
+                    n1: 1070528 0x502F3B: ??? (in /usr/bin/python3.6)
+                     n1: 1070528 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                      n1: 1070528 0x502207: ??? (in /usr/bin/python3.6)
+                       n1: 1070528 0x502F3B: ??? (in /usr/bin/python3.6)
+                        n1: 1070528 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                         n1: 1070528 0x501943: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+                          n1: 1070528 0x5A36EF: _PyObject_FastCallDict (in /usr/bin/python3.6)
+                           n1: 1070528 0x59662C: _PyObject_CallMethodIdObjArgs (in /usr/bin/python3.6)
+                            n2: 1070528 0x4EE84B: PyImport_ImportModuleLevelObject (in /usr/bin/python3.6)
+                             n1: 791928 0x50896A: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                              n0: 791928 0x504C26: ??? (in /usr/bin/python3.6)
+                             n0: 278600 in 2 places, all below massif's threshold (1.00%)
+          n0: 10208 in 1 place, below massif's threshold (1.00%)
+         n0: 128304 in 4 places, all below massif's threshold (1.00%)
+       n0: 928 in 1 place, below massif's threshold (1.00%)
+    n0: 216224 in 2 places, all below massif's threshold (1.00%)
+   n0: 237768 in 6 places, all below massif's threshold (1.00%)
+  n0: 6048 in 2 places, all below massif's threshold (1.00%)
+ n0: 1445514 in 113 places, all below massif's threshold (1.00%)
+ n2: 1099968 0x5A9699: PyObject_Malloc (in /usr/bin/python3.6)
+  n2: 1002058 0x54FC97: ??? (in /usr/bin/python3.6)
+   n2: 684023 0x5553B3: ??? (in /usr/bin/python3.6)
+    n1: 660430 0x5A337A: _PyObject_FastCallDict (in /usr/bin/python3.6)
+     n1: 660430 0x510F73: ??? (in /usr/bin/python3.6)
+      n1: 660430 0x5030D3: ??? (in /usr/bin/python3.6)
+       n1: 660430 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+        n2: 660430 0x504C26: ??? (in /usr/bin/python3.6)
+         n1: 658941 0x511D76: ??? (in /usr/bin/python3.6)
+          n1: 658941 0x56617C: PyCFunction_Call (in /usr/bin/python3.6)
+           n1: 658941 0x50BB64: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+            n1: 658941 0x504C26: ??? (in /usr/bin/python3.6)
+             n1: 658941 0x50253E: ??? (in /usr/bin/python3.6)
+              n1: 658941 0x502F3B: ??? (in /usr/bin/python3.6)
+               n1: 658941 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                n1: 658941 0x502207: ??? (in /usr/bin/python3.6)
+                 n1: 658941 0x502F3B: ??? (in /usr/bin/python3.6)
+                  n1: 658941 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                   n1: 658941 0x502207: ??? (in /usr/bin/python3.6)
+                    n1: 658941 0x502F3B: ??? (in /usr/bin/python3.6)
+                     n1: 658941 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                      n1: 658941 0x502207: ??? (in /usr/bin/python3.6)
+                       n1: 658941 0x502F3B: ??? (in /usr/bin/python3.6)
+                        n1: 658941 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                         n1: 658941 0x501943: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+                          n1: 658941 0x5A36EF: _PyObject_FastCallDict (in /usr/bin/python3.6)
+                           n1: 658941 0x59662C: _PyObject_CallMethodIdObjArgs (in /usr/bin/python3.6)
+                            n2: 658941 0x4EE84B: PyImport_ImportModuleLevelObject (in /usr/bin/python3.6)
+                             n1: 580686 0x50896A: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                              n0: 580686 0x504C26: ??? (in /usr/bin/python3.6)
+                             n0: 78255 in 1 place, below massif's threshold (1.00%)
+         n0: 1489 in 1 place, below massif's threshold (1.00%)
+    n0: 23593 in 1 place, below massif's threshold (1.00%)
+   n0: 318035 in 1 place, below massif's threshold (1.00%)
+  n0: 97910 in 6 places, all below massif's threshold (1.00%)
+ n2: 712365 0x53F493: ??? (in /usr/bin/python3.6)
+  n1: 647429 0x523F56: _PyUnicodeWriter_Finish (in /usr/bin/python3.6)
+   n0: 647429 in 3 places, all below massif's threshold (1.00%)
+  n0: 64936 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=7
+#-----------
+time=7668670553
+mem_heap_B=56663875
+mem_heap_extra_B=454805
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=8454932331
+mem_heap_B=59565891
+mem_heap_extra_B=458125
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=9788148896
+mem_heap_B=64538507
+mem_heap_extra_B=463813
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=10548046564
+mem_heap_B=67408667
+mem_heap_extra_B=467069
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=11862093698
+mem_heap_B=72301499
+mem_heap_extra_B=472661
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=12855324941
+mem_heap_B=76008411
+mem_heap_extra_B=476885
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=13549557822
+mem_heap_B=78555059
+mem_heap_extra_B=479789
+mem_stacks_B=0
+heap_tree=detailed
+n7: 78555059 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 45196080 0x57BAD3: PyList_Append (in /usr/bin/python3.6)
+  n2: 45188464 0x5076CF: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+   n1: 45188464 0x502207: ??? (in /usr/bin/python3.6)
+    n1: 45188464 0x502F3B: ??? (in /usr/bin/python3.6)
+     n1: 45188464 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+      n2: 45188464 0x504C26: ??? (in /usr/bin/python3.6)
+       n1: 45175312 0x506391: PyEval_EvalCode (in /usr/bin/python3.6)
+        n1: 45175312 0x634D50: ??? (in /usr/bin/python3.6)
+         n1: 45175312 0x634E08: PyRun_FileExFlags (in /usr/bin/python3.6)
+          n1: 45175312 0x6385C6: PyRun_SimpleFileExFlags (in /usr/bin/python3.6)
+           n1: 45175312 0x639158: Py_Main (in /usr/bin/python3.6)
+            n0: 45175312 0x4A6F0E: main (in /usr/bin/python3.6)
+       n0: 13152 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 7616 in 11 places, all below massif's threshold (1.00%)
+ n3: 19528986 0x53B7DD: PyUnicode_New (in /usr/bin/python3.6)
+  n2: 14704238 0x528720: PyUnicode_Substring (in /usr/bin/python3.6)
+   n1: 14570213 0x4B2006: ??? (in /usr/bin/python3.6)
+    n1: 14570213 0x4B24AB: ??? (in /usr/bin/python3.6)
+     n1: 14570213 0x585782: ??? (in /usr/bin/python3.6)
+      n1: 14570213 0x565BCF: _PyCFunction_FastCallDict (in /usr/bin/python3.6)
+       n1: 14570213 0x5A375F: _PyObject_FastCallDict (in /usr/bin/python3.6)
+        n1: 14570213 0x5A3D42: _PyObject_CallMethodId_SizeT (in /usr/bin/python3.6)
+         n1: 14570213 0x5D608B: ??? (in /usr/bin/python3.6)
+          n1: 14570213 0x502D6D: ??? (in /usr/bin/python3.6)
+           n1: 14570213 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+            n1: 14570213 0x504C26: ??? (in /usr/bin/python3.6)
+             n1: 14570213 0x506391: PyEval_EvalCode (in /usr/bin/python3.6)
+              n1: 14570213 0x634D50: ??? (in /usr/bin/python3.6)
+               n1: 14570213 0x634E08: PyRun_FileExFlags (in /usr/bin/python3.6)
+                n1: 14570213 0x6385C6: PyRun_SimpleFileExFlags (in /usr/bin/python3.6)
+                 n1: 14570213 0x639158: Py_Main (in /usr/bin/python3.6)
+                  n0: 14570213 0x4A6F0E: main (in /usr/bin/python3.6)
+   n0: 134025 in 8 places, all below massif's threshold (1.00%)
+  n2: 4266935 0x533528: _PyUnicode_JoinArray (in /usr/bin/python3.6)
+   n1: 4189230 0x5375DD: PyUnicode_Join (in /usr/bin/python3.6)
+    n1: 4189230 0x4B22A2: ??? (in /usr/bin/python3.6)
+     n1: 4189230 0x4B24AB: ??? (in /usr/bin/python3.6)
+      n1: 4189230 0x585782: ??? (in /usr/bin/python3.6)
+       n1: 4189230 0x565BCF: _PyCFunction_FastCallDict (in /usr/bin/python3.6)
+        n1: 4189230 0x5A375F: _PyObject_FastCallDict (in /usr/bin/python3.6)
+         n1: 4189230 0x5A3D42: _PyObject_CallMethodId_SizeT (in /usr/bin/python3.6)
+          n1: 4189230 0x5D608B: ??? (in /usr/bin/python3.6)
+           n1: 4189230 0x502D6D: ??? (in /usr/bin/python3.6)
+            n1: 4189230 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+             n1: 4189230 0x504C26: ??? (in /usr/bin/python3.6)
+              n1: 4189230 0x506391: PyEval_EvalCode (in /usr/bin/python3.6)
+               n1: 4189230 0x634D50: ??? (in /usr/bin/python3.6)
+                n1: 4189230 0x634E08: PyRun_FileExFlags (in /usr/bin/python3.6)
+                 n1: 4189230 0x6385C6: PyRun_SimpleFileExFlags (in /usr/bin/python3.6)
+                  n1: 4189230 0x639158: Py_Main (in /usr/bin/python3.6)
+                   n0: 4189230 0x4A6F0E: main (in /usr/bin/python3.6)
+   n0: 77705 in 1 place, below massif's threshold (1.00%)
+  n0: 557813 in 7 places, all below massif's threshold (1.00%)
+ n1: 4949202 0x53EB0E: ??? (in /usr/bin/python3.6)
+  n3: 4949202 0x4EA430: ??? (in /usr/bin/python3.6)
+   n2: 3937345 0x4EA4FE: ??? (in /usr/bin/python3.6)
+    n2: 3676283 0x4EA924: ??? (in /usr/bin/python3.6)
+     n2: 3564663 0x4EA60D: ??? (in /usr/bin/python3.6)
+      n1: 3096091 0x4EB2F4: ??? (in /usr/bin/python3.6)
+       n1: 3096091 0x4EC1F5: ??? (in /usr/bin/python3.6)
+        n1: 3096091 0x502D6D: ??? (in /usr/bin/python3.6)
+         n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+          n1: 3096091 0x504C26: ??? (in /usr/bin/python3.6)
+           n1: 3096091 0x50253E: ??? (in /usr/bin/python3.6)
+            n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+             n1: 3096091 0x50763F: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+              n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+               n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                 n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+                  n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                   n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                    n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+                     n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                      n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                       n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+                        n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                         n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                          n1: 3096091 0x501943: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+                           n1: 3096091 0x5A36EF: _PyObject_FastCallDict (in /usr/bin/python3.6)
+                            n1: 3096091 0x59662C: _PyObject_CallMethodIdObjArgs (in /usr/bin/python3.6)
+                             n2: 3096091 0x4EE84B: PyImport_ImportModuleLevelObject (in /usr/bin/python3.6)
+                              n0: 2509435 0x50896A: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                              n0: 586656 in 1 place, below massif's threshold (1.00%)
+      n0: 468572 in 1 place, below massif's threshold (1.00%)
+     n0: 111620 in 6 places, all below massif's threshold (1.00%)
+    n0: 261062 in 1 place, below massif's threshold (1.00%)
+   n2: 993000 0x4EA522: ??? (in /usr/bin/python3.6)
+    n2: 991922 0x4EA924: ??? (in /usr/bin/python3.6)
+     n2: 953272 0x4EA60D: ??? (in /usr/bin/python3.6)
+      n1: 950479 0x4EB2F4: ??? (in /usr/bin/python3.6)
+       n1: 950479 0x4EC1F5: ??? (in /usr/bin/python3.6)
+        n1: 950479 0x502D6D: ??? (in /usr/bin/python3.6)
+         n1: 950479 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+          n1: 950479 0x504C26: ??? (in /usr/bin/python3.6)
+           n1: 950479 0x50253E: ??? (in /usr/bin/python3.6)
+            n1: 950479 0x502F3B: ??? (in /usr/bin/python3.6)
+             n1: 950479 0x50763F: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+              n1: 950479 0x502207: ??? (in /usr/bin/python3.6)
+               n1: 950479 0x502F3B: ??? (in /usr/bin/python3.6)
+                n1: 950479 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                 n1: 950479 0x502207: ??? (in /usr/bin/python3.6)
+                  n1: 950479 0x502F3B: ??? (in /usr/bin/python3.6)
+                   n1: 950479 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                    n1: 950479 0x502207: ??? (in /usr/bin/python3.6)
+                     n1: 950479 0x502F3B: ??? (in /usr/bin/python3.6)
+                      n1: 950479 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                       n1: 950479 0x502207: ??? (in /usr/bin/python3.6)
+                        n1: 950479 0x502F3B: ??? (in /usr/bin/python3.6)
+                         n1: 950479 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                          n1: 950479 0x501943: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+                           n1: 950479 0x5A36EF: _PyObject_FastCallDict (in /usr/bin/python3.6)
+                            n1: 950479 0x59662C: _PyObject_CallMethodIdObjArgs (in /usr/bin/python3.6)
+                             n2: 950479 0x4EE84B: PyImport_ImportModuleLevelObject (in /usr/bin/python3.6)
+                              n0: 863424 0x50896A: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                              n0: 87055 in 1 place, below massif's threshold (1.00%)
+      n0: 2793 in 1 place, below massif's threshold (1.00%)
+     n0: 38650 in 5 places, all below massif's threshold (1.00%)
+    n0: 1078 in 1 place, below massif's threshold (1.00%)
+   n0: 18857 in 4 places, all below massif's threshold (1.00%)
+ n2: 3897520 0x5A89E3: ??? (in /usr/bin/python3.6)
+  n1: 3802512 0x56D072: ??? (in /usr/bin/python3.6)
+   n3: 3802512 0x56D8C2: ??? (in /usr/bin/python3.6)
+    n2: 1312968 0x574D34: PyDict_SetDefault (in /usr/bin/python3.6)
+     n2: 1310744 0x523DB8: PyUnicode_InternInPlace (in /usr/bin/python3.6)
+      n2: 1310744 0x4EA453: ??? (in /usr/bin/python3.6)
+       n1: 1310744 0x4EA60D: ??? (in /usr/bin/python3.6)
+        n1: 1310744 0x4EA950: ??? (in /usr/bin/python3.6)
+         n1: 1310744 0x4EA60D: ??? (in /usr/bin/python3.6)
+          n1: 1310744 0x4EB2F4: ??? (in /usr/bin/python3.6)
+           n1: 1310744 0x4EC1F5: ??? (in /usr/bin/python3.6)
+            n1: 1310744 0x502D6D: ??? (in /usr/bin/python3.6)
+             n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+              n1: 1310744 0x504C26: ??? (in /usr/bin/python3.6)
+               n1: 1310744 0x50253E: ??? (in /usr/bin/python3.6)
+                n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                 n1: 1310744 0x50763F: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                  n1: 1310744 0x502207: ??? (in /usr/bin/python3.6)
+                   n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                    n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                     n1: 1310744 0x502207: ??? (in /usr/bin/python3.6)
+                      n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                       n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                        n1: 1310744 0x502207: ??? (in /usr/bin/python3.6)
+                         n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                          n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                           n1: 1310744 0x502207: ??? (in /usr/bin/python3.6)
+                            n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                             n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                              n0: 1310744 0x501943: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+       n0: 0 in 3 places, all below massif's threshold (1.00%)
+      n0: 0 in 2 places, all below massif's threshold (1.00%)
+     n0: 2224 in 3 places, all below massif's threshold (1.00%)
+    n1: 1308960 0x56E971: PyDict_SetItem (in /usr/bin/python3.6)
+     n0: 1308960 in 108 places, all below massif's threshold (1.00%)
+    n0: 1180584 in 4 places, all below massif's threshold (1.00%)
+  n0: 95008 in 4 places, all below massif's threshold (1.00%)
+ n0: 2213295 in 114 places, all below massif's threshold (1.00%)
+ n2: 1670008 0x554D9A: PyType_GenericAlloc (in /usr/bin/python3.6)
+  n2: 1663960 0x54FADC: ??? (in /usr/bin/python3.6)
+   n2: 1426192 0x5553B3: ??? (in /usr/bin/python3.6)
+    n1: 1209968 0x5A337A: _PyObject_FastCallDict (in /usr/bin/python3.6)
+     n1: 1209968 0x510F73: ??? (in /usr/bin/python3.6)
+      n2: 1209968 0x5030D3: ??? (in /usr/bin/python3.6)
+       n1: 1209040 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+        n2: 1209040 0x504C26: ??? (in /usr/bin/python3.6)
+         n2: 1080736 0x511D76: ??? (in /usr/bin/python3.6)
+          n1: 1070528 0x56617C: PyCFunction_Call (in /usr/bin/python3.6)
+           n1: 1070528 0x50BB64: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+            n1: 1070528 0x504C26: ??? (in /usr/bin/python3.6)
+             n1: 1070528 0x50253E: ??? (in /usr/bin/python3.6)
+              n1: 1070528 0x502F3B: ??? (in /usr/bin/python3.6)
+               n1: 1070528 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                n1: 1070528 0x502207: ??? (in /usr/bin/python3.6)
+                 n1: 1070528 0x502F3B: ??? (in /usr/bin/python3.6)
+                  n1: 1070528 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                   n1: 1070528 0x502207: ??? (in /usr/bin/python3.6)
+                    n1: 1070528 0x502F3B: ??? (in /usr/bin/python3.6)
+                     n1: 1070528 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                      n1: 1070528 0x502207: ??? (in /usr/bin/python3.6)
+                       n1: 1070528 0x502F3B: ??? (in /usr/bin/python3.6)
+                        n1: 1070528 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                         n1: 1070528 0x501943: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+                          n1: 1070528 0x5A36EF: _PyObject_FastCallDict (in /usr/bin/python3.6)
+                           n1: 1070528 0x59662C: _PyObject_CallMethodIdObjArgs (in /usr/bin/python3.6)
+                            n2: 1070528 0x4EE84B: PyImport_ImportModuleLevelObject (in /usr/bin/python3.6)
+                             n1: 791928 0x50896A: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                              n0: 791928 0x504C26: ??? (in /usr/bin/python3.6)
+                             n0: 278600 in 2 places, all below massif's threshold (1.00%)
+          n0: 10208 in 1 place, below massif's threshold (1.00%)
+         n0: 128304 in 4 places, all below massif's threshold (1.00%)
+       n0: 928 in 1 place, below massif's threshold (1.00%)
+    n0: 216224 in 2 places, all below massif's threshold (1.00%)
+   n0: 237768 in 6 places, all below massif's threshold (1.00%)
+  n0: 6048 in 2 places, all below massif's threshold (1.00%)
+ n2: 1099968 0x5A9699: PyObject_Malloc (in /usr/bin/python3.6)
+  n1: 1002058 0x54FC97: ??? (in /usr/bin/python3.6)
+   n0: 1002058 in 2 places, all below massif's threshold (1.00%)
+  n0: 97910 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=14546091504
+mem_heap_B=82316627
+mem_heap_extra_B=484085
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=15930755809
+mem_heap_B=87478035
+mem_heap_extra_B=489989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=16893673563
+mem_heap_B=91029395
+mem_heap_extra_B=494045
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=17644419483
+mem_heap_B=93784627
+mem_heap_extra_B=497197
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=18655473835
+mem_heap_B=97602011
+mem_heap_extra_B=501565
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=20119665877
+mem_heap_B=103004179
+mem_heap_extra_B=507725
+mem_stacks_B=0
+heap_tree=detailed
+n7: 103004179 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 69612144 0x57BAD3: PyList_Append (in /usr/bin/python3.6)
+  n2: 69604528 0x5076CF: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+   n1: 69604528 0x502207: ??? (in /usr/bin/python3.6)
+    n1: 69604528 0x502F3B: ??? (in /usr/bin/python3.6)
+     n1: 69604528 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+      n2: 69604528 0x504C26: ??? (in /usr/bin/python3.6)
+       n1: 69591376 0x506391: PyEval_EvalCode (in /usr/bin/python3.6)
+        n1: 69591376 0x634D50: ??? (in /usr/bin/python3.6)
+         n1: 69591376 0x634E08: PyRun_FileExFlags (in /usr/bin/python3.6)
+          n1: 69591376 0x6385C6: PyRun_SimpleFileExFlags (in /usr/bin/python3.6)
+           n1: 69591376 0x639158: Py_Main (in /usr/bin/python3.6)
+            n0: 69591376 0x4A6F0E: main (in /usr/bin/python3.6)
+       n0: 13152 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 7616 in 11 places, all below massif's threshold (1.00%)
+ n3: 19528986 0x53B7DD: PyUnicode_New (in /usr/bin/python3.6)
+  n2: 14704238 0x528720: PyUnicode_Substring (in /usr/bin/python3.6)
+   n1: 14570213 0x4B2006: ??? (in /usr/bin/python3.6)
+    n1: 14570213 0x4B24AB: ??? (in /usr/bin/python3.6)
+     n1: 14570213 0x585782: ??? (in /usr/bin/python3.6)
+      n1: 14570213 0x565BCF: _PyCFunction_FastCallDict (in /usr/bin/python3.6)
+       n1: 14570213 0x5A375F: _PyObject_FastCallDict (in /usr/bin/python3.6)
+        n1: 14570213 0x5A3D42: _PyObject_CallMethodId_SizeT (in /usr/bin/python3.6)
+         n1: 14570213 0x5D608B: ??? (in /usr/bin/python3.6)
+          n1: 14570213 0x502D6D: ??? (in /usr/bin/python3.6)
+           n1: 14570213 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+            n1: 14570213 0x504C26: ??? (in /usr/bin/python3.6)
+             n1: 14570213 0x506391: PyEval_EvalCode (in /usr/bin/python3.6)
+              n1: 14570213 0x634D50: ??? (in /usr/bin/python3.6)
+               n1: 14570213 0x634E08: PyRun_FileExFlags (in /usr/bin/python3.6)
+                n1: 14570213 0x6385C6: PyRun_SimpleFileExFlags (in /usr/bin/python3.6)
+                 n1: 14570213 0x639158: Py_Main (in /usr/bin/python3.6)
+                  n0: 14570213 0x4A6F0E: main (in /usr/bin/python3.6)
+   n0: 134025 in 8 places, all below massif's threshold (1.00%)
+  n2: 4266935 0x533528: _PyUnicode_JoinArray (in /usr/bin/python3.6)
+   n1: 4189230 0x5375DD: PyUnicode_Join (in /usr/bin/python3.6)
+    n1: 4189230 0x4B22A2: ??? (in /usr/bin/python3.6)
+     n1: 4189230 0x4B24AB: ??? (in /usr/bin/python3.6)
+      n1: 4189230 0x585782: ??? (in /usr/bin/python3.6)
+       n1: 4189230 0x565BCF: _PyCFunction_FastCallDict (in /usr/bin/python3.6)
+        n1: 4189230 0x5A375F: _PyObject_FastCallDict (in /usr/bin/python3.6)
+         n1: 4189230 0x5A3D42: _PyObject_CallMethodId_SizeT (in /usr/bin/python3.6)
+          n1: 4189230 0x5D608B: ??? (in /usr/bin/python3.6)
+           n1: 4189230 0x502D6D: ??? (in /usr/bin/python3.6)
+            n1: 4189230 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+             n1: 4189230 0x504C26: ??? (in /usr/bin/python3.6)
+              n1: 4189230 0x506391: PyEval_EvalCode (in /usr/bin/python3.6)
+               n1: 4189230 0x634D50: ??? (in /usr/bin/python3.6)
+                n1: 4189230 0x634E08: PyRun_FileExFlags (in /usr/bin/python3.6)
+                 n1: 4189230 0x6385C6: PyRun_SimpleFileExFlags (in /usr/bin/python3.6)
+                  n1: 4189230 0x639158: Py_Main (in /usr/bin/python3.6)
+                   n0: 4189230 0x4A6F0E: main (in /usr/bin/python3.6)
+   n0: 77705 in 1 place, below massif's threshold (1.00%)
+  n0: 557813 in 7 places, all below massif's threshold (1.00%)
+ n1: 4949202 0x53EB0E: ??? (in /usr/bin/python3.6)
+  n2: 4949202 0x4EA430: ??? (in /usr/bin/python3.6)
+   n2: 3937345 0x4EA4FE: ??? (in /usr/bin/python3.6)
+    n2: 3676283 0x4EA924: ??? (in /usr/bin/python3.6)
+     n2: 3564663 0x4EA60D: ??? (in /usr/bin/python3.6)
+      n1: 3096091 0x4EB2F4: ??? (in /usr/bin/python3.6)
+       n1: 3096091 0x4EC1F5: ??? (in /usr/bin/python3.6)
+        n1: 3096091 0x502D6D: ??? (in /usr/bin/python3.6)
+         n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+          n1: 3096091 0x504C26: ??? (in /usr/bin/python3.6)
+           n1: 3096091 0x50253E: ??? (in /usr/bin/python3.6)
+            n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+             n1: 3096091 0x50763F: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+              n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+               n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                 n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+                  n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                   n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                    n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+                     n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                      n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                       n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+                        n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                         n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                          n1: 3096091 0x501943: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+                           n1: 3096091 0x5A36EF: _PyObject_FastCallDict (in /usr/bin/python3.6)
+                            n1: 3096091 0x59662C: _PyObject_CallMethodIdObjArgs (in /usr/bin/python3.6)
+                             n2: 3096091 0x4EE84B: PyImport_ImportModuleLevelObject (in /usr/bin/python3.6)
+                              n0: 2509435 0x50896A: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                              n0: 586656 in 1 place, below massif's threshold (1.00%)
+      n0: 468572 in 1 place, below massif's threshold (1.00%)
+     n0: 111620 in 6 places, all below massif's threshold (1.00%)
+    n0: 261062 in 1 place, below massif's threshold (1.00%)
+   n0: 1011857 in 5 places, all below massif's threshold (1.00%)
+ n2: 3897520 0x5A89E3: ??? (in /usr/bin/python3.6)
+  n1: 3802512 0x56D072: ??? (in /usr/bin/python3.6)
+   n3: 3802512 0x56D8C2: ??? (in /usr/bin/python3.6)
+    n2: 1312968 0x574D34: PyDict_SetDefault (in /usr/bin/python3.6)
+     n2: 1310744 0x523DB8: PyUnicode_InternInPlace (in /usr/bin/python3.6)
+      n2: 1310744 0x4EA453: ??? (in /usr/bin/python3.6)
+       n1: 1310744 0x4EA60D: ??? (in /usr/bin/python3.6)
+        n1: 1310744 0x4EA950: ??? (in /usr/bin/python3.6)
+         n1: 1310744 0x4EA60D: ??? (in /usr/bin/python3.6)
+          n1: 1310744 0x4EB2F4: ??? (in /usr/bin/python3.6)
+           n1: 1310744 0x4EC1F5: ??? (in /usr/bin/python3.6)
+            n1: 1310744 0x502D6D: ??? (in /usr/bin/python3.6)
+             n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+              n1: 1310744 0x504C26: ??? (in /usr/bin/python3.6)
+               n1: 1310744 0x50253E: ??? (in /usr/bin/python3.6)
+                n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                 n1: 1310744 0x50763F: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                  n1: 1310744 0x502207: ??? (in /usr/bin/python3.6)
+                   n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                    n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                     n1: 1310744 0x502207: ??? (in /usr/bin/python3.6)
+                      n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                       n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                        n1: 1310744 0x502207: ??? (in /usr/bin/python3.6)
+                         n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                          n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                           n1: 1310744 0x502207: ??? (in /usr/bin/python3.6)
+                            n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                             n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                              n0: 1310744 0x501943: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+       n0: 0 in 3 places, all below massif's threshold (1.00%)
+      n0: 0 in 2 places, all below massif's threshold (1.00%)
+     n0: 2224 in 3 places, all below massif's threshold (1.00%)
+    n1: 1308960 0x56E971: PyDict_SetItem (in /usr/bin/python3.6)
+     n0: 1308960 in 108 places, all below massif's threshold (1.00%)
+    n0: 1180584 in 4 places, all below massif's threshold (1.00%)
+  n0: 95008 in 4 places, all below massif's threshold (1.00%)
+ n0: 2246351 in 114 places, all below massif's threshold (1.00%)
+ n2: 1670008 0x554D9A: PyType_GenericAlloc (in /usr/bin/python3.6)
+  n2: 1663960 0x54FADC: ??? (in /usr/bin/python3.6)
+   n2: 1426192 0x5553B3: ??? (in /usr/bin/python3.6)
+    n1: 1209968 0x5A337A: _PyObject_FastCallDict (in /usr/bin/python3.6)
+     n1: 1209968 0x510F73: ??? (in /usr/bin/python3.6)
+      n2: 1209968 0x5030D3: ??? (in /usr/bin/python3.6)
+       n1: 1209040 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+        n2: 1209040 0x504C26: ??? (in /usr/bin/python3.6)
+         n2: 1080736 0x511D76: ??? (in /usr/bin/python3.6)
+          n1: 1070528 0x56617C: PyCFunction_Call (in /usr/bin/python3.6)
+           n1: 1070528 0x50BB64: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+            n1: 1070528 0x504C26: ??? (in /usr/bin/python3.6)
+             n1: 1070528 0x50253E: ??? (in /usr/bin/python3.6)
+              n1: 1070528 0x502F3B: ??? (in /usr/bin/python3.6)
+               n1: 1070528 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                n1: 1070528 0x502207: ??? (in /usr/bin/python3.6)
+                 n1: 1070528 0x502F3B: ??? (in /usr/bin/python3.6)
+                  n1: 1070528 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                   n1: 1070528 0x502207: ??? (in /usr/bin/python3.6)
+                    n1: 1070528 0x502F3B: ??? (in /usr/bin/python3.6)
+                     n1: 1070528 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                      n1: 1070528 0x502207: ??? (in /usr/bin/python3.6)
+                       n1: 1070528 0x502F3B: ??? (in /usr/bin/python3.6)
+                        n1: 1070528 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                         n1: 1070528 0x501943: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+                          n1: 1070528 0x5A36EF: _PyObject_FastCallDict (in /usr/bin/python3.6)
+                           n1: 1070528 0x59662C: _PyObject_CallMethodIdObjArgs (in /usr/bin/python3.6)
+                            n1: 1070528 0x4EE84B: PyImport_ImportModuleLevelObject (in /usr/bin/python3.6)
+                             n0: 1070528 in 3 places, all below massif's threshold (1.00%)
+          n0: 10208 in 1 place, below massif's threshold (1.00%)
+         n0: 128304 in 4 places, all below massif's threshold (1.00%)
+       n0: 928 in 1 place, below massif's threshold (1.00%)
+    n0: 216224 in 2 places, all below massif's threshold (1.00%)
+   n0: 237768 in 6 places, all below massif's threshold (1.00%)
+  n0: 6048 in 2 places, all below massif's threshold (1.00%)
+ n1: 1099968 0x5A9699: PyObject_Malloc (in /usr/bin/python3.6)
+  n0: 1099968 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=21429265866
+mem_heap_B=103326227
+mem_heap_extra_B=508101
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=22503314100
+mem_heap_B=166046227
+mem_heap_extra_B=510093
+mem_stacks_B=0
+heap_tree=peak
+n7: 166046227 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 69934160 0x57BAD3: PyList_Append (in /usr/bin/python3.6)
+  n2: 69933152 0x5076CF: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+   n1: 69933152 0x502207: ??? (in /usr/bin/python3.6)
+    n1: 69933152 0x502F3B: ??? (in /usr/bin/python3.6)
+     n1: 69933152 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+      n2: 69933152 0x504C26: ??? (in /usr/bin/python3.6)
+       n1: 69920000 0x506391: PyEval_EvalCode (in /usr/bin/python3.6)
+        n1: 69920000 0x634D50: ??? (in /usr/bin/python3.6)
+         n1: 69920000 0x634E08: PyRun_FileExFlags (in /usr/bin/python3.6)
+          n1: 69920000 0x6385C6: PyRun_SimpleFileExFlags (in /usr/bin/python3.6)
+           n1: 69920000 0x639158: Py_Main (in /usr/bin/python3.6)
+            n0: 69920000 0x4A6F0E: main (in /usr/bin/python3.6)
+       n0: 13152 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 1008 in 11 places, all below massif's threshold (1.00%)
+ n2: 62722417 0x67BDC9F: npy_alloc_cache (alloc.c:221)
+  n2: 62722007 0x6822776: PyArray_NewFromDescr_int (ctors.c:1072)
+   n2: 62721483 0x6825EBE: PyArray_FromAny (ctors.c:1181)
+    n1: 62721420 0x6826433: PyArray_CheckFromAny (ctors.c:1988)
+     n1: 62721420 0x68BF75B: _array_fromobject (multiarraymodule.c:1728)
+      n2: 62721420 0x5030D3: ??? (in /usr/bin/python3.6)
+       n1: 62721260 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+        n2: 62721260 0x504C26: ??? (in /usr/bin/python3.6)
+         n1: 62720000 0x506391: PyEval_EvalCode (in /usr/bin/python3.6)
+          n1: 62720000 0x634D50: ??? (in /usr/bin/python3.6)
+           n1: 62720000 0x634E08: PyRun_FileExFlags (in /usr/bin/python3.6)
+            n1: 62720000 0x6385C6: PyRun_SimpleFileExFlags (in /usr/bin/python3.6)
+             n1: 62720000 0x639158: Py_Main (in /usr/bin/python3.6)
+              n0: 62720000 0x4A6F0E: main (in /usr/bin/python3.6)
+         n0: 1260 in 2 places, all below massif's threshold (1.00%)
+       n0: 160 in 1 place, below massif's threshold (1.00%)
+    n0: 63 in 5 places, all below massif's threshold (1.00%)
+   n0: 524 in 2 places, all below massif's threshold (1.00%)
+  n0: 410 in 2 places, all below massif's threshold (1.00%)
+ n3: 19528986 0x53B7DD: PyUnicode_New (in /usr/bin/python3.6)
+  n2: 14704238 0x528720: PyUnicode_Substring (in /usr/bin/python3.6)
+   n1: 14570213 0x4B2006: ??? (in /usr/bin/python3.6)
+    n1: 14570213 0x4B24AB: ??? (in /usr/bin/python3.6)
+     n1: 14570213 0x585782: ??? (in /usr/bin/python3.6)
+      n1: 14570213 0x565BCF: _PyCFunction_FastCallDict (in /usr/bin/python3.6)
+       n1: 14570213 0x5A375F: _PyObject_FastCallDict (in /usr/bin/python3.6)
+        n1: 14570213 0x5A3D42: _PyObject_CallMethodId_SizeT (in /usr/bin/python3.6)
+         n1: 14570213 0x5D608B: ??? (in /usr/bin/python3.6)
+          n1: 14570213 0x502D6D: ??? (in /usr/bin/python3.6)
+           n1: 14570213 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+            n1: 14570213 0x504C26: ??? (in /usr/bin/python3.6)
+             n1: 14570213 0x506391: PyEval_EvalCode (in /usr/bin/python3.6)
+              n1: 14570213 0x634D50: ??? (in /usr/bin/python3.6)
+               n1: 14570213 0x634E08: PyRun_FileExFlags (in /usr/bin/python3.6)
+                n1: 14570213 0x6385C6: PyRun_SimpleFileExFlags (in /usr/bin/python3.6)
+                 n1: 14570213 0x639158: Py_Main (in /usr/bin/python3.6)
+                  n0: 14570213 0x4A6F0E: main (in /usr/bin/python3.6)
+   n0: 134025 in 8 places, all below massif's threshold (1.00%)
+  n2: 4266935 0x533528: _PyUnicode_JoinArray (in /usr/bin/python3.6)
+   n1: 4189230 0x5375DD: PyUnicode_Join (in /usr/bin/python3.6)
+    n1: 4189230 0x4B22A2: ??? (in /usr/bin/python3.6)
+     n1: 4189230 0x4B24AB: ??? (in /usr/bin/python3.6)
+      n1: 4189230 0x585782: ??? (in /usr/bin/python3.6)
+       n1: 4189230 0x565BCF: _PyCFunction_FastCallDict (in /usr/bin/python3.6)
+        n1: 4189230 0x5A375F: _PyObject_FastCallDict (in /usr/bin/python3.6)
+         n1: 4189230 0x5A3D42: _PyObject_CallMethodId_SizeT (in /usr/bin/python3.6)
+          n1: 4189230 0x5D608B: ??? (in /usr/bin/python3.6)
+           n1: 4189230 0x502D6D: ??? (in /usr/bin/python3.6)
+            n1: 4189230 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+             n1: 4189230 0x504C26: ??? (in /usr/bin/python3.6)
+              n1: 4189230 0x506391: PyEval_EvalCode (in /usr/bin/python3.6)
+               n1: 4189230 0x634D50: ??? (in /usr/bin/python3.6)
+                n1: 4189230 0x634E08: PyRun_FileExFlags (in /usr/bin/python3.6)
+                 n1: 4189230 0x6385C6: PyRun_SimpleFileExFlags (in /usr/bin/python3.6)
+                  n1: 4189230 0x639158: Py_Main (in /usr/bin/python3.6)
+                   n0: 4189230 0x4A6F0E: main (in /usr/bin/python3.6)
+   n0: 77705 in 1 place, below massif's threshold (1.00%)
+  n0: 557813 in 7 places, all below massif's threshold (1.00%)
+ n1: 4949202 0x53EB0E: ??? (in /usr/bin/python3.6)
+  n2: 4949202 0x4EA430: ??? (in /usr/bin/python3.6)
+   n2: 3937345 0x4EA4FE: ??? (in /usr/bin/python3.6)
+    n2: 3676283 0x4EA924: ??? (in /usr/bin/python3.6)
+     n2: 3564663 0x4EA60D: ??? (in /usr/bin/python3.6)
+      n1: 3096091 0x4EB2F4: ??? (in /usr/bin/python3.6)
+       n1: 3096091 0x4EC1F5: ??? (in /usr/bin/python3.6)
+        n1: 3096091 0x502D6D: ??? (in /usr/bin/python3.6)
+         n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+          n1: 3096091 0x504C26: ??? (in /usr/bin/python3.6)
+           n1: 3096091 0x50253E: ??? (in /usr/bin/python3.6)
+            n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+             n1: 3096091 0x50763F: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+              n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+               n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                 n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+                  n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                   n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                    n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+                     n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                      n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                       n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+                        n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                         n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                          n1: 3096091 0x501943: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+                           n1: 3096091 0x5A36EF: _PyObject_FastCallDict (in /usr/bin/python3.6)
+                            n1: 3096091 0x59662C: _PyObject_CallMethodIdObjArgs (in /usr/bin/python3.6)
+                             n2: 3096091 0x4EE84B: PyImport_ImportModuleLevelObject (in /usr/bin/python3.6)
+                              n0: 2509435 0x50896A: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                              n0: 586656 in 1 place, below massif's threshold (1.00%)
+      n0: 468572 in 1 place, below massif's threshold (1.00%)
+     n0: 111620 in 6 places, all below massif's threshold (1.00%)
+    n0: 261062 in 1 place, below massif's threshold (1.00%)
+   n0: 1011857 in 5 places, all below massif's threshold (1.00%)
+ n2: 3897520 0x5A89E3: ??? (in /usr/bin/python3.6)
+  n1: 3802512 0x56D072: ??? (in /usr/bin/python3.6)
+   n1: 3802512 0x56D8C2: ??? (in /usr/bin/python3.6)
+    n0: 3802512 in 6 places, all below massif's threshold (1.00%)
+  n0: 95008 in 4 places, all below massif's threshold (1.00%)
+ n0: 3343934 in 114 places, all below massif's threshold (1.00%)
+ n1: 1670008 0x554D9A: PyType_GenericAlloc (in /usr/bin/python3.6)
+  n0: 1670008 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=22
+#-----------
+time=22830062018
+mem_heap_B=109341107
+mem_heap_extra_B=445213
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=24396044263
+mem_heap_B=102567279
+mem_heap_extra_B=430953
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=25935553893
+mem_heap_B=103528519
+mem_heap_extra_B=441065
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=27000328780
+mem_heap_B=103531055
+mem_heap_extra_B=446425
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=28059191736
+mem_heap_B=103533615
+mem_heap_extra_B=451689
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=29133978311
+mem_heap_B=103536279
+mem_heap_extra_B=457273
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=30472106514
+mem_heap_B=103539399
+mem_heap_extra_B=463625
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=31532296699
+mem_heap_B=103541911
+mem_heap_extra_B=468905
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=32598511336
+mem_heap_B=103544455
+mem_heap_extra_B=474089
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=33396481745
+mem_heap_B=103546423
+mem_heap_extra_B=478025
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=34462120499
+mem_heap_B=103548975
+mem_heap_extra_B=483257
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=35521218437
+mem_heap_B=103551487
+mem_heap_extra_B=488425
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=36591131248
+mem_heap_B=103553951
+mem_heap_extra_B=493369
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=37656947280
+mem_heap_B=103556455
+mem_heap_extra_B=498553
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=38721306590
+mem_heap_B=103559039
+mem_heap_extra_B=503785
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=39708353645
+mem_heap_B=103561423
+mem_heap_extra_B=508665
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=40694620904
+mem_heap_B=103563775
+mem_heap_extra_B=513401
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=41681440768
+mem_heap_B=103566039
+mem_heap_extra_B=517993
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=43322421130
+mem_heap_B=103569991
+mem_heap_extra_B=526025
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=44635461548
+mem_heap_B=103573127
+mem_heap_extra_B=532361
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=46285061424
+mem_heap_B=103577039
+mem_heap_extra_B=540249
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=47271617717
+mem_heap_B=103579383
+mem_heap_extra_B=544937
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=48912710550
+mem_heap_B=103583287
+mem_heap_extra_B=552841
+mem_stacks_B=0
+heap_tree=detailed
+n8: 103583287 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 62882481 0x67BDC9F: npy_alloc_cache (alloc.c:221)
+  n2: 62802071 0x6822776: PyArray_NewFromDescr_int (ctors.c:1072)
+   n2: 62721491 0x6825EBE: PyArray_FromAny (ctors.c:1181)
+    n1: 62721420 0x6826433: PyArray_CheckFromAny (ctors.c:1988)
+     n1: 62721420 0x68BF75B: _array_fromobject (multiarraymodule.c:1728)
+      n2: 62721420 0x5030D3: ??? (in /usr/bin/python3.6)
+       n1: 62721260 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+        n2: 62721260 0x504C26: ??? (in /usr/bin/python3.6)
+         n1: 62720000 0x506391: PyEval_EvalCode (in /usr/bin/python3.6)
+          n1: 62720000 0x634D50: ??? (in /usr/bin/python3.6)
+           n1: 62720000 0x634E08: PyRun_FileExFlags (in /usr/bin/python3.6)
+            n1: 62720000 0x6385C6: PyRun_SimpleFileExFlags (in /usr/bin/python3.6)
+             n1: 62720000 0x639158: Py_Main (in /usr/bin/python3.6)
+              n0: 62720000 0x4A6F0E: main (in /usr/bin/python3.6)
+         n0: 1260 in 2 places, all below massif's threshold (1.00%)
+       n0: 160 in 1 place, below massif's threshold (1.00%)
+    n0: 71 in 5 places, all below massif's threshold (1.00%)
+   n0: 80580 in 2 places, all below massif's threshold (1.00%)
+  n0: 80410 in 2 places, all below massif's threshold (1.00%)
+ n3: 19528986 0x53B7DD: PyUnicode_New (in /usr/bin/python3.6)
+  n2: 14704238 0x528720: PyUnicode_Substring (in /usr/bin/python3.6)
+   n1: 14570213 0x4B2006: ??? (in /usr/bin/python3.6)
+    n1: 14570213 0x4B24AB: ??? (in /usr/bin/python3.6)
+     n1: 14570213 0x585782: ??? (in /usr/bin/python3.6)
+      n1: 14570213 0x565BCF: _PyCFunction_FastCallDict (in /usr/bin/python3.6)
+       n1: 14570213 0x5A375F: _PyObject_FastCallDict (in /usr/bin/python3.6)
+        n1: 14570213 0x5A3D42: _PyObject_CallMethodId_SizeT (in /usr/bin/python3.6)
+         n1: 14570213 0x5D608B: ??? (in /usr/bin/python3.6)
+          n1: 14570213 0x502D6D: ??? (in /usr/bin/python3.6)
+           n1: 14570213 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+            n1: 14570213 0x504C26: ??? (in /usr/bin/python3.6)
+             n1: 14570213 0x506391: PyEval_EvalCode (in /usr/bin/python3.6)
+              n1: 14570213 0x634D50: ??? (in /usr/bin/python3.6)
+               n1: 14570213 0x634E08: PyRun_FileExFlags (in /usr/bin/python3.6)
+                n1: 14570213 0x6385C6: PyRun_SimpleFileExFlags (in /usr/bin/python3.6)
+                 n1: 14570213 0x639158: Py_Main (in /usr/bin/python3.6)
+                  n0: 14570213 0x4A6F0E: main (in /usr/bin/python3.6)
+   n0: 134025 in 8 places, all below massif's threshold (1.00%)
+  n2: 4266935 0x533528: _PyUnicode_JoinArray (in /usr/bin/python3.6)
+   n1: 4189230 0x5375DD: PyUnicode_Join (in /usr/bin/python3.6)
+    n1: 4189230 0x4B22A2: ??? (in /usr/bin/python3.6)
+     n1: 4189230 0x4B24AB: ??? (in /usr/bin/python3.6)
+      n1: 4189230 0x585782: ??? (in /usr/bin/python3.6)
+       n1: 4189230 0x565BCF: _PyCFunction_FastCallDict (in /usr/bin/python3.6)
+        n1: 4189230 0x5A375F: _PyObject_FastCallDict (in /usr/bin/python3.6)
+         n1: 4189230 0x5A3D42: _PyObject_CallMethodId_SizeT (in /usr/bin/python3.6)
+          n1: 4189230 0x5D608B: ??? (in /usr/bin/python3.6)
+           n1: 4189230 0x502D6D: ??? (in /usr/bin/python3.6)
+            n1: 4189230 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+             n1: 4189230 0x504C26: ??? (in /usr/bin/python3.6)
+              n1: 4189230 0x506391: PyEval_EvalCode (in /usr/bin/python3.6)
+               n1: 4189230 0x634D50: ??? (in /usr/bin/python3.6)
+                n1: 4189230 0x634E08: PyRun_FileExFlags (in /usr/bin/python3.6)
+                 n1: 4189230 0x6385C6: PyRun_SimpleFileExFlags (in /usr/bin/python3.6)
+                  n1: 4189230 0x639158: Py_Main (in /usr/bin/python3.6)
+                   n0: 4189230 0x4A6F0E: main (in /usr/bin/python3.6)
+   n0: 77705 in 1 place, below massif's threshold (1.00%)
+  n0: 557813 in 7 places, all below massif's threshold (1.00%)
+ n1: 7146336 0x67BDDE3: npy_alloc_cache_zero (alloc.c:243)
+  n1: 7146336 0x68226EF: PyArray_NewFromDescr_int (ctors.c:1069)
+   n1: 7146336 0x68247CD: PyArray_Zeros (ctors.c:3011)
+    n1: 7146336 0x68BD156: array_zeros (multiarraymodule.c:1982)
+     n1: 7146336 0x566101: PyCFunction_Call (in /usr/bin/python3.6)
+      n2: 7146336 0x28871C1D: ??? (in /home/sud/.local/lib/python3.6/site-packages/sklearn/neighbors/kd_tree.cpython-36m-x86_64-linux-gnu.so)
+       n1: 6409984 0x288A2A2B: ??? (in /home/sud/.local/lib/python3.6/site-packages/sklearn/neighbors/kd_tree.cpython-36m-x86_64-linux-gnu.so)
+        n1: 6409984 0x288A5BFF: ??? (in /home/sud/.local/lib/python3.6/site-packages/sklearn/neighbors/kd_tree.cpython-36m-x86_64-linux-gnu.so)
+         n1: 6409984 0x55541F: ??? (in /usr/bin/python3.6)
+          n1: 6409984 0x59EBBC: PyObject_Call (in /usr/bin/python3.6)
+           n1: 6409984 0x507C15: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+            n1: 6409984 0x502207: ??? (in /usr/bin/python3.6)
+             n1: 6409984 0x502F3B: ??? (in /usr/bin/python3.6)
+              n1: 6409984 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+               n1: 6409984 0x504C26: ??? (in /usr/bin/python3.6)
+                n1: 6409984 0x50253E: ??? (in /usr/bin/python3.6)
+                 n1: 6409984 0x502F3B: ??? (in /usr/bin/python3.6)
+                  n1: 6409984 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                   n1: 6409984 0x504C26: ??? (in /usr/bin/python3.6)
+                    n1: 6409984 0x58650B: ??? (in /usr/bin/python3.6)
+                     n1: 6409984 0x59EBBC: PyObject_Call (in /usr/bin/python3.6)
+                      n1: 6409984 0x507C15: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                       n1: 6409984 0x504C26: ??? (in /usr/bin/python3.6)
+                        n1: 6409984 0x50253E: ??? (in /usr/bin/python3.6)
+                         n1: 6409984 0x502F3B: ??? (in /usr/bin/python3.6)
+                          n1: 6409984 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                           n1: 6409984 0x504C26: ??? (in /usr/bin/python3.6)
+                            n1: 6409984 0x506391: PyEval_EvalCode (in /usr/bin/python3.6)
+                             n1: 6409984 0x634D50: ??? (in /usr/bin/python3.6)
+                              n0: 6409984 0x634E08: PyRun_FileExFlags (in /usr/bin/python3.6)
+       n0: 736352 in 4 places, all below massif's threshold (1.00%)
+ n1: 4952442 0x53EB0E: ??? (in /usr/bin/python3.6)
+  n2: 4952442 0x4EA430: ??? (in /usr/bin/python3.6)
+   n2: 3937951 0x4EA4FE: ??? (in /usr/bin/python3.6)
+    n2: 3676889 0x4EA924: ??? (in /usr/bin/python3.6)
+     n2: 3565269 0x4EA60D: ??? (in /usr/bin/python3.6)
+      n1: 3096091 0x4EB2F4: ??? (in /usr/bin/python3.6)
+       n1: 3096091 0x4EC1F5: ??? (in /usr/bin/python3.6)
+        n1: 3096091 0x502D6D: ??? (in /usr/bin/python3.6)
+         n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+          n1: 3096091 0x504C26: ??? (in /usr/bin/python3.6)
+           n1: 3096091 0x50253E: ??? (in /usr/bin/python3.6)
+            n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+             n1: 3096091 0x50763F: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+              n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+               n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                 n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+                  n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                   n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                    n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+                     n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                      n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                       n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+                        n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                         n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                          n1: 3096091 0x501943: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+                           n1: 3096091 0x5A36EF: _PyObject_FastCallDict (in /usr/bin/python3.6)
+                            n1: 3096091 0x59662C: _PyObject_CallMethodIdObjArgs (in /usr/bin/python3.6)
+                             n2: 3096091 0x4EE84B: PyImport_ImportModuleLevelObject (in /usr/bin/python3.6)
+                              n0: 2509435 0x50896A: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                              n0: 586656 in 1 place, below massif's threshold (1.00%)
+      n0: 469178 in 1 place, below massif's threshold (1.00%)
+     n0: 111620 in 6 places, all below massif's threshold (1.00%)
+    n0: 261062 in 1 place, below massif's threshold (1.00%)
+   n0: 1014491 in 5 places, all below massif's threshold (1.00%)
+ n2: 3906040 0x5A89E3: ??? (in /usr/bin/python3.6)
+  n1: 3811032 0x56D072: ??? (in /usr/bin/python3.6)
+   n3: 3811032 0x56D8C2: ??? (in /usr/bin/python3.6)
+    n2: 1312968 0x574D34: PyDict_SetDefault (in /usr/bin/python3.6)
+     n2: 1310744 0x523DB8: PyUnicode_InternInPlace (in /usr/bin/python3.6)
+      n2: 1310744 0x4EA453: ??? (in /usr/bin/python3.6)
+       n1: 1310744 0x4EA60D: ??? (in /usr/bin/python3.6)
+        n1: 1310744 0x4EA950: ??? (in /usr/bin/python3.6)
+         n1: 1310744 0x4EA60D: ??? (in /usr/bin/python3.6)
+          n1: 1310744 0x4EB2F4: ??? (in /usr/bin/python3.6)
+           n1: 1310744 0x4EC1F5: ??? (in /usr/bin/python3.6)
+            n1: 1310744 0x502D6D: ??? (in /usr/bin/python3.6)
+             n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+              n1: 1310744 0x504C26: ??? (in /usr/bin/python3.6)
+               n1: 1310744 0x50253E: ??? (in /usr/bin/python3.6)
+                n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                 n1: 1310744 0x50763F: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                  n1: 1310744 0x502207: ??? (in /usr/bin/python3.6)
+                   n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                    n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                     n1: 1310744 0x502207: ??? (in /usr/bin/python3.6)
+                      n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                       n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                        n1: 1310744 0x502207: ??? (in /usr/bin/python3.6)
+                         n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                          n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                           n1: 1310744 0x502207: ??? (in /usr/bin/python3.6)
+                            n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                             n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                              n0: 1310744 0x501943: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+       n0: 0 in 3 places, all below massif's threshold (1.00%)
+      n0: 0 in 2 places, all below massif's threshold (1.00%)
+     n0: 2224 in 3 places, all below massif's threshold (1.00%)
+    n1: 1312872 0x56E971: PyDict_SetItem (in /usr/bin/python3.6)
+     n0: 1312872 in 109 places, all below massif's threshold (1.00%)
+    n0: 1185192 in 4 places, all below massif's threshold (1.00%)
+  n0: 95008 in 4 places, all below massif's threshold (1.00%)
+ n0: 2385824 in 124 places, all below massif's threshold (1.00%)
+ n2: 1678624 0x554D9A: PyType_GenericAlloc (in /usr/bin/python3.6)
+  n2: 1671384 0x54FADC: ??? (in /usr/bin/python3.6)
+   n2: 1433616 0x5553B3: ??? (in /usr/bin/python3.6)
+    n1: 1217392 0x5A337A: _PyObject_FastCallDict (in /usr/bin/python3.6)
+     n1: 1217392 0x510F73: ??? (in /usr/bin/python3.6)
+      n2: 1217392 0x5030D3: ??? (in /usr/bin/python3.6)
+       n1: 1216464 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+        n2: 1216464 0x504C26: ??? (in /usr/bin/python3.6)
+         n2: 1088160 0x511D76: ??? (in /usr/bin/python3.6)
+          n1: 1077952 0x56617C: PyCFunction_Call (in /usr/bin/python3.6)
+           n1: 1077952 0x50BB64: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+            n1: 1077952 0x504C26: ??? (in /usr/bin/python3.6)
+             n1: 1077952 0x50253E: ??? (in /usr/bin/python3.6)
+              n1: 1077952 0x502F3B: ??? (in /usr/bin/python3.6)
+               n1: 1077952 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                n1: 1077952 0x502207: ??? (in /usr/bin/python3.6)
+                 n1: 1077952 0x502F3B: ??? (in /usr/bin/python3.6)
+                  n1: 1077952 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                   n1: 1077952 0x502207: ??? (in /usr/bin/python3.6)
+                    n1: 1077952 0x502F3B: ??? (in /usr/bin/python3.6)
+                     n1: 1077952 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                      n1: 1077952 0x502207: ??? (in /usr/bin/python3.6)
+                       n1: 1077952 0x502F3B: ??? (in /usr/bin/python3.6)
+                        n1: 1077952 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                         n1: 1077952 0x501943: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+                          n1: 1077952 0x5A36EF: _PyObject_FastCallDict (in /usr/bin/python3.6)
+                           n1: 1077952 0x59662C: _PyObject_CallMethodIdObjArgs (in /usr/bin/python3.6)
+                            n1: 1077952 0x4EE84B: PyImport_ImportModuleLevelObject (in /usr/bin/python3.6)
+                             n0: 1077952 in 3 places, all below massif's threshold (1.00%)
+          n0: 10208 in 1 place, below massif's threshold (1.00%)
+         n0: 128304 in 4 places, all below massif's threshold (1.00%)
+       n0: 928 in 1 place, below massif's threshold (1.00%)
+    n0: 216224 in 2 places, all below massif's threshold (1.00%)
+   n0: 237768 in 6 places, all below massif's threshold (1.00%)
+  n0: 7240 in 3 places, all below massif's threshold (1.00%)
+ n1: 1102554 0x5A9699: PyObject_Malloc (in /usr/bin/python3.6)
+  n0: 1102554 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=45
+#-----------
+time=49574381104
+mem_heap_B=103584831
+mem_heap_extra_B=555961
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=51218925955
+mem_heap_B=103588687
+mem_heap_extra_B=563817
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=52531847390
+mem_heap_B=103591823
+mem_heap_extra_B=570201
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=54174045281
+mem_heap_B=103595759
+mem_heap_extra_B=578185
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=55162532724
+mem_heap_B=103598103
+mem_heap_extra_B=582969
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=55490129072
+mem_heap_B=103598839
+mem_heap_extra_B=584441
+mem_stacks_B=0
+heap_tree=detailed
+n8: 103598839 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 62882481 0x67BDC9F: npy_alloc_cache (alloc.c:221)
+  n2: 62802071 0x6822776: PyArray_NewFromDescr_int (ctors.c:1072)
+   n2: 62721491 0x6825EBE: PyArray_FromAny (ctors.c:1181)
+    n1: 62721420 0x6826433: PyArray_CheckFromAny (ctors.c:1988)
+     n1: 62721420 0x68BF75B: _array_fromobject (multiarraymodule.c:1728)
+      n2: 62721420 0x5030D3: ??? (in /usr/bin/python3.6)
+       n1: 62721260 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+        n2: 62721260 0x504C26: ??? (in /usr/bin/python3.6)
+         n1: 62720000 0x506391: PyEval_EvalCode (in /usr/bin/python3.6)
+          n1: 62720000 0x634D50: ??? (in /usr/bin/python3.6)
+           n1: 62720000 0x634E08: PyRun_FileExFlags (in /usr/bin/python3.6)
+            n1: 62720000 0x6385C6: PyRun_SimpleFileExFlags (in /usr/bin/python3.6)
+             n1: 62720000 0x639158: Py_Main (in /usr/bin/python3.6)
+              n0: 62720000 0x4A6F0E: main (in /usr/bin/python3.6)
+         n0: 1260 in 2 places, all below massif's threshold (1.00%)
+       n0: 160 in 1 place, below massif's threshold (1.00%)
+    n0: 71 in 5 places, all below massif's threshold (1.00%)
+   n0: 80580 in 2 places, all below massif's threshold (1.00%)
+  n0: 80410 in 2 places, all below massif's threshold (1.00%)
+ n3: 19528986 0x53B7DD: PyUnicode_New (in /usr/bin/python3.6)
+  n2: 14704238 0x528720: PyUnicode_Substring (in /usr/bin/python3.6)
+   n1: 14570213 0x4B2006: ??? (in /usr/bin/python3.6)
+    n1: 14570213 0x4B24AB: ??? (in /usr/bin/python3.6)
+     n1: 14570213 0x585782: ??? (in /usr/bin/python3.6)
+      n1: 14570213 0x565BCF: _PyCFunction_FastCallDict (in /usr/bin/python3.6)
+       n1: 14570213 0x5A375F: _PyObject_FastCallDict (in /usr/bin/python3.6)
+        n1: 14570213 0x5A3D42: _PyObject_CallMethodId_SizeT (in /usr/bin/python3.6)
+         n1: 14570213 0x5D608B: ??? (in /usr/bin/python3.6)
+          n1: 14570213 0x502D6D: ??? (in /usr/bin/python3.6)
+           n1: 14570213 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+            n1: 14570213 0x504C26: ??? (in /usr/bin/python3.6)
+             n1: 14570213 0x506391: PyEval_EvalCode (in /usr/bin/python3.6)
+              n1: 14570213 0x634D50: ??? (in /usr/bin/python3.6)
+               n1: 14570213 0x634E08: PyRun_FileExFlags (in /usr/bin/python3.6)
+                n1: 14570213 0x6385C6: PyRun_SimpleFileExFlags (in /usr/bin/python3.6)
+                 n1: 14570213 0x639158: Py_Main (in /usr/bin/python3.6)
+                  n0: 14570213 0x4A6F0E: main (in /usr/bin/python3.6)
+   n0: 134025 in 8 places, all below massif's threshold (1.00%)
+  n2: 4266935 0x533528: _PyUnicode_JoinArray (in /usr/bin/python3.6)
+   n1: 4189230 0x5375DD: PyUnicode_Join (in /usr/bin/python3.6)
+    n1: 4189230 0x4B22A2: ??? (in /usr/bin/python3.6)
+     n1: 4189230 0x4B24AB: ??? (in /usr/bin/python3.6)
+      n1: 4189230 0x585782: ??? (in /usr/bin/python3.6)
+       n1: 4189230 0x565BCF: _PyCFunction_FastCallDict (in /usr/bin/python3.6)
+        n1: 4189230 0x5A375F: _PyObject_FastCallDict (in /usr/bin/python3.6)
+         n1: 4189230 0x5A3D42: _PyObject_CallMethodId_SizeT (in /usr/bin/python3.6)
+          n1: 4189230 0x5D608B: ??? (in /usr/bin/python3.6)
+           n1: 4189230 0x502D6D: ??? (in /usr/bin/python3.6)
+            n1: 4189230 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+             n1: 4189230 0x504C26: ??? (in /usr/bin/python3.6)
+              n1: 4189230 0x506391: PyEval_EvalCode (in /usr/bin/python3.6)
+               n1: 4189230 0x634D50: ??? (in /usr/bin/python3.6)
+                n1: 4189230 0x634E08: PyRun_FileExFlags (in /usr/bin/python3.6)
+                 n1: 4189230 0x6385C6: PyRun_SimpleFileExFlags (in /usr/bin/python3.6)
+                  n1: 4189230 0x639158: Py_Main (in /usr/bin/python3.6)
+                   n0: 4189230 0x4A6F0E: main (in /usr/bin/python3.6)
+   n0: 77705 in 1 place, below massif's threshold (1.00%)
+  n0: 557813 in 7 places, all below massif's threshold (1.00%)
+ n1: 7146336 0x67BDDE3: npy_alloc_cache_zero (alloc.c:243)
+  n1: 7146336 0x68226EF: PyArray_NewFromDescr_int (ctors.c:1069)
+   n1: 7146336 0x68247CD: PyArray_Zeros (ctors.c:3011)
+    n1: 7146336 0x68BD156: array_zeros (multiarraymodule.c:1982)
+     n1: 7146336 0x566101: PyCFunction_Call (in /usr/bin/python3.6)
+      n2: 7146336 0x28871C1D: ??? (in /home/sud/.local/lib/python3.6/site-packages/sklearn/neighbors/kd_tree.cpython-36m-x86_64-linux-gnu.so)
+       n1: 6409984 0x288A2A2B: ??? (in /home/sud/.local/lib/python3.6/site-packages/sklearn/neighbors/kd_tree.cpython-36m-x86_64-linux-gnu.so)
+        n1: 6409984 0x288A5BFF: ??? (in /home/sud/.local/lib/python3.6/site-packages/sklearn/neighbors/kd_tree.cpython-36m-x86_64-linux-gnu.so)
+         n1: 6409984 0x55541F: ??? (in /usr/bin/python3.6)
+          n1: 6409984 0x59EBBC: PyObject_Call (in /usr/bin/python3.6)
+           n1: 6409984 0x507C15: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+            n1: 6409984 0x502207: ??? (in /usr/bin/python3.6)
+             n1: 6409984 0x502F3B: ??? (in /usr/bin/python3.6)
+              n1: 6409984 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+               n1: 6409984 0x504C26: ??? (in /usr/bin/python3.6)
+                n1: 6409984 0x50253E: ??? (in /usr/bin/python3.6)
+                 n1: 6409984 0x502F3B: ??? (in /usr/bin/python3.6)
+                  n1: 6409984 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                   n1: 6409984 0x504C26: ??? (in /usr/bin/python3.6)
+                    n1: 6409984 0x58650B: ??? (in /usr/bin/python3.6)
+                     n1: 6409984 0x59EBBC: PyObject_Call (in /usr/bin/python3.6)
+                      n1: 6409984 0x507C15: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                       n1: 6409984 0x504C26: ??? (in /usr/bin/python3.6)
+                        n1: 6409984 0x50253E: ??? (in /usr/bin/python3.6)
+                         n1: 6409984 0x502F3B: ??? (in /usr/bin/python3.6)
+                          n1: 6409984 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                           n1: 6409984 0x504C26: ??? (in /usr/bin/python3.6)
+                            n1: 6409984 0x506391: PyEval_EvalCode (in /usr/bin/python3.6)
+                             n1: 6409984 0x634D50: ??? (in /usr/bin/python3.6)
+                              n0: 6409984 0x634E08: PyRun_FileExFlags (in /usr/bin/python3.6)
+       n0: 736352 in 4 places, all below massif's threshold (1.00%)
+ n1: 4952442 0x53EB0E: ??? (in /usr/bin/python3.6)
+  n2: 4952442 0x4EA430: ??? (in /usr/bin/python3.6)
+   n2: 3937951 0x4EA4FE: ??? (in /usr/bin/python3.6)
+    n2: 3676889 0x4EA924: ??? (in /usr/bin/python3.6)
+     n2: 3565269 0x4EA60D: ??? (in /usr/bin/python3.6)
+      n1: 3096091 0x4EB2F4: ??? (in /usr/bin/python3.6)
+       n1: 3096091 0x4EC1F5: ??? (in /usr/bin/python3.6)
+        n1: 3096091 0x502D6D: ??? (in /usr/bin/python3.6)
+         n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+          n1: 3096091 0x504C26: ??? (in /usr/bin/python3.6)
+           n1: 3096091 0x50253E: ??? (in /usr/bin/python3.6)
+            n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+             n1: 3096091 0x50763F: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+              n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+               n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                 n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+                  n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                   n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                    n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+                     n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                      n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                       n1: 3096091 0x502207: ??? (in /usr/bin/python3.6)
+                        n1: 3096091 0x502F3B: ??? (in /usr/bin/python3.6)
+                         n1: 3096091 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                          n1: 3096091 0x501943: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+                           n1: 3096091 0x5A36EF: _PyObject_FastCallDict (in /usr/bin/python3.6)
+                            n1: 3096091 0x59662C: _PyObject_CallMethodIdObjArgs (in /usr/bin/python3.6)
+                             n2: 3096091 0x4EE84B: PyImport_ImportModuleLevelObject (in /usr/bin/python3.6)
+                              n0: 2509435 0x50896A: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                              n0: 586656 in 1 place, below massif's threshold (1.00%)
+      n0: 469178 in 1 place, below massif's threshold (1.00%)
+     n0: 111620 in 6 places, all below massif's threshold (1.00%)
+    n0: 261062 in 1 place, below massif's threshold (1.00%)
+   n0: 1014491 in 5 places, all below massif's threshold (1.00%)
+ n2: 3906040 0x5A89E3: ??? (in /usr/bin/python3.6)
+  n1: 3811032 0x56D072: ??? (in /usr/bin/python3.6)
+   n3: 3811032 0x56D8C2: ??? (in /usr/bin/python3.6)
+    n2: 1312968 0x574D34: PyDict_SetDefault (in /usr/bin/python3.6)
+     n2: 1310744 0x523DB8: PyUnicode_InternInPlace (in /usr/bin/python3.6)
+      n2: 1310744 0x4EA453: ??? (in /usr/bin/python3.6)
+       n1: 1310744 0x4EA60D: ??? (in /usr/bin/python3.6)
+        n1: 1310744 0x4EA950: ??? (in /usr/bin/python3.6)
+         n1: 1310744 0x4EA60D: ??? (in /usr/bin/python3.6)
+          n1: 1310744 0x4EB2F4: ??? (in /usr/bin/python3.6)
+           n1: 1310744 0x4EC1F5: ??? (in /usr/bin/python3.6)
+            n1: 1310744 0x502D6D: ??? (in /usr/bin/python3.6)
+             n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+              n1: 1310744 0x504C26: ??? (in /usr/bin/python3.6)
+               n1: 1310744 0x50253E: ??? (in /usr/bin/python3.6)
+                n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                 n1: 1310744 0x50763F: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                  n1: 1310744 0x502207: ??? (in /usr/bin/python3.6)
+                   n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                    n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                     n1: 1310744 0x502207: ??? (in /usr/bin/python3.6)
+                      n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                       n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                        n1: 1310744 0x502207: ??? (in /usr/bin/python3.6)
+                         n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                          n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                           n1: 1310744 0x502207: ??? (in /usr/bin/python3.6)
+                            n1: 1310744 0x502F3B: ??? (in /usr/bin/python3.6)
+                             n1: 1310744 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                              n0: 1310744 0x501943: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+       n0: 0 in 3 places, all below massif's threshold (1.00%)
+      n0: 0 in 2 places, all below massif's threshold (1.00%)
+     n0: 2224 in 3 places, all below massif's threshold (1.00%)
+    n1: 1312872 0x56E971: PyDict_SetItem (in /usr/bin/python3.6)
+     n0: 1312872 in 109 places, all below massif's threshold (1.00%)
+    n0: 1185192 in 4 places, all below massif's threshold (1.00%)
+  n0: 95008 in 4 places, all below massif's threshold (1.00%)
+ n0: 2401376 in 124 places, all below massif's threshold (1.00%)
+ n2: 1678624 0x554D9A: PyType_GenericAlloc (in /usr/bin/python3.6)
+  n2: 1671384 0x54FADC: ??? (in /usr/bin/python3.6)
+   n2: 1433616 0x5553B3: ??? (in /usr/bin/python3.6)
+    n1: 1217392 0x5A337A: _PyObject_FastCallDict (in /usr/bin/python3.6)
+     n1: 1217392 0x510F73: ??? (in /usr/bin/python3.6)
+      n2: 1217392 0x5030D3: ??? (in /usr/bin/python3.6)
+       n1: 1216464 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+        n2: 1216464 0x504C26: ??? (in /usr/bin/python3.6)
+         n2: 1088160 0x511D76: ??? (in /usr/bin/python3.6)
+          n1: 1077952 0x56617C: PyCFunction_Call (in /usr/bin/python3.6)
+           n1: 1077952 0x50BB64: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+            n1: 1077952 0x504C26: ??? (in /usr/bin/python3.6)
+             n1: 1077952 0x50253E: ??? (in /usr/bin/python3.6)
+              n1: 1077952 0x502F3B: ??? (in /usr/bin/python3.6)
+               n1: 1077952 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                n1: 1077952 0x502207: ??? (in /usr/bin/python3.6)
+                 n1: 1077952 0x502F3B: ??? (in /usr/bin/python3.6)
+                  n1: 1077952 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                   n1: 1077952 0x502207: ??? (in /usr/bin/python3.6)
+                    n1: 1077952 0x502F3B: ??? (in /usr/bin/python3.6)
+                     n1: 1077952 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                      n1: 1077952 0x502207: ??? (in /usr/bin/python3.6)
+                       n1: 1077952 0x502F3B: ??? (in /usr/bin/python3.6)
+                        n1: 1077952 0x506857: _PyEval_EvalFrameDefault (in /usr/bin/python3.6)
+                         n1: 1077952 0x501943: _PyFunction_FastCallDict (in /usr/bin/python3.6)
+                          n1: 1077952 0x5A36EF: _PyObject_FastCallDict (in /usr/bin/python3.6)
+                           n1: 1077952 0x59662C: _PyObject_CallMethodIdObjArgs (in /usr/bin/python3.6)
+                            n1: 1077952 0x4EE84B: PyImport_ImportModuleLevelObject (in /usr/bin/python3.6)
+                             n0: 1077952 in 3 places, all below massif's threshold (1.00%)
+          n0: 10208 in 1 place, below massif's threshold (1.00%)
+         n0: 128304 in 4 places, all below massif's threshold (1.00%)
+       n0: 928 in 1 place, below massif's threshold (1.00%)
+    n0: 216224 in 2 places, all below massif's threshold (1.00%)
+   n0: 237768 in 6 places, all below massif's threshold (1.00%)
+  n0: 7240 in 3 places, all below massif's threshold (1.00%)
+ n1: 1102554 0x5A9699: PyObject_Malloc (in /usr/bin/python3.6)
+  n0: 1102554 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=51
+#-----------
+time=55818512452
+mem_heap_B=103599591
+mem_heap_extra_B=585977
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=56145611603
+mem_heap_B=103600367
+mem_heap_extra_B=587545
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=56472544844
+mem_heap_B=103601119
+mem_heap_extra_B=589097
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=56803994043
+mem_heap_B=103441523
+mem_heap_extra_B=610957
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=57133226545
+mem_heap_B=103442307
+mem_heap_extra_B=612541
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=57461131512
+mem_heap_B=103282591
+mem_heap_extra_B=634241
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=57789006076
+mem_heap_B=103283383
+mem_heap_extra_B=635785
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=58115797785
+mem_heap_B=103124283
+mem_heap_extra_B=657525
+mem_stacks_B=0
+heap_tree=empty

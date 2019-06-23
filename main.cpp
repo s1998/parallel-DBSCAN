@@ -4,7 +4,6 @@
 #include <fstream>
 #include <sstream>
 #include "omp.h"
-#include "argparse/argparse.hpp"
 #include <chrono>
 #include <stdlib.h>
 
@@ -18,6 +17,7 @@ void readFile(string fname, vector<vector<float> >& points,
     string str;
     float number;
     int start_lines = 1;
+    vector<vector<float> > tempPoints;
     while (std::getline(file, str))
     {
         if (start_lines)
@@ -28,12 +28,16 @@ void readFile(string fname, vector<vector<float> >& points,
         stringstream iss(str);
         vector<float> point;
         while ( iss >> number ) 
-          point.push_back( number / 255.0 + (rand() % 10) / 10.0);
-        points.push_back(point);
+          point.push_back( number / 255.0);
+        tempPoints.push_back(point);
     }
+
+    points.resize(tempPoints.size() * repeat);
     for(int i = 0; i < repeat; i++)
       for(int j = 0; j < 10000; j++)
-        points.push_back(points[j]);
+        for(int k = 0; k < tempPoints[0].size(); k++)
+          points[i * tempPoints.size() + j].push_back(
+            tempPoints[j][k] + (rand() % 100) / 100.0);
 }
 
 template <typename t>
@@ -51,16 +55,8 @@ void timeit(t& clusterer,
 
 int main(int argc, const char** argv)
 {
-  // ArgumentParser parser;
-  // parser.addArgument("-r", "--repeat", 0);
-  // // parser.addArgument("-f", "--fileName", "MINST.txt");
-  // parser.parse(argc, argv);
 
-  // // if we get here, the configuration is valid
-  // int repeat = parser.retrieve<int>("repeat");
-  // string fname = parser.retrieve<string>("fileName");
-  
-  int repeat = 0;
+  int repeat = 10;
   cout<<"No of processors : "<<omp_get_num_procs()<<"\n";
   omp_set_nested(true);
   vector<vector<float> > points;
@@ -75,9 +71,9 @@ int main(int argc, const char** argv)
   
   omp_set_num_threads(16); 
   timeit(clusterer1, points, "KDTree Range search parallel");
-  timeit(clusterer2, points, "Naive Range search parallel");
-  // omp_set_num_threads(1); 
-  // timeit(clusterer1, points, "KDTree Range search serial");
+  // timeit(clusterer2, points, "Naive Range search parallel");
+  omp_set_num_threads(1); 
+  timeit(clusterer1, points, "KDTree Range search serial");
   // timeit(clusterer2, points, "Naive Range search serial");
 
 }
