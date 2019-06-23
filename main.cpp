@@ -50,13 +50,13 @@ void timeit(t& clusterer,
   clusterer.cluster(points, clusterId);
   high_resolution_clock::time_point t2 = high_resolution_clock::now();
   auto duration = duration_cast<microseconds>( t2 - t1 ).count()/1000000.0;
-  cout <<"Time taken by clustering policy "<<name<<" : "<< duration<<endl;
+  cout <<"\n Time taken by clustering policy "<<name<<" : "<< duration<<endl;
 }
 
 int main(int argc, const char** argv)
 {
 
-  int repeat = 10;
+  int repeat = 50;
   cout<<"No of processors : "<<omp_get_num_procs()<<"\n";
   omp_set_nested(true);
   vector<vector<float> > points;
@@ -69,9 +69,13 @@ int main(int argc, const char** argv)
   dbscan::DBCAN<rangeSearcherKDTree> clusterer1(minPoints, eps);
   dbscan::DBCAN<> clusterer2(minPoints, eps);
   
-  omp_set_num_threads(16); 
-  timeit(clusterer1, points, "KDTree Range search parallel");
-  // timeit(clusterer2, points, "Naive Range search parallel");
+  for(int i=4; i < 65; i *= 2)
+  {
+    cout<<"\nMaximum number of threads used : "<<i<<endl;
+    omp_set_num_threads(i); 
+    timeit(clusterer1, points, "KDTree Range search parallel");
+    // timeit(clusterer2, points, "Naive Range search parallel");
+  }
   omp_set_num_threads(1); 
   timeit(clusterer1, points, "KDTree Range search serial");
   // timeit(clusterer2, points, "Naive Range search serial");

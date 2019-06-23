@@ -3,7 +3,7 @@ import random
 import time
 from sklearn.cluster import DBSCAN
 
-repeat = 10
+repeat = 1
 with open("MINST.txt", "r") as f:
   data = f.readlines()[1:]
   points = []

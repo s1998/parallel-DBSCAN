@@ -14,7 +14,7 @@ class rangeSearcherNaive
       #pragma omp parallel for 
       for(int i=0;i<points.size();i++) {
         if (i % 1000 == 0)
-          std::cout<<"**\n"<<i<<"\n";
+          std::cout<<"** "<<i<<" ";
         for(int j=0;j<points.size();j++) {
           if (i == j) continue;
           if(l2_norm(points[i], points[j]) <= eps) {
@@ -46,7 +46,7 @@ class rangeSearcherKDTree
           for(int i=0; i < points.size(); i++)
             {
               if (i % 1000 == 0)
-                std::cout<<"**\n"<<i<<"\n";
+                std::cout<<"** "<<i<<" ";
               adjPoints[i] = tree.neighborhood_indices(points[i], eps);
               // std::cout<<adjPoints[i].size()<<std::endl;
             }
