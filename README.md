@@ -34,7 +34,7 @@ To use the naive range search, replace the first line with:
 ```
 dbscan::DBCAN<> clusterer(minPoints, eps);
 ```
-There is also support for custom metrics.
+Cureently supports l2 metric. WIP to enable custom metrics.
 
 ## Performance details
 
