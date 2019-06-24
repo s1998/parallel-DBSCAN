@@ -48,7 +48,6 @@ class rangeSearcherKDTree
               if (i % 1000 == 0)
                 std::cout<<"** "<<i<<" ";
               adjPoints[i] = tree.neighborhood_indices(points[i], eps);
-              // std::cout<<adjPoints[i].size()<<std::endl;
             }
         }
       }

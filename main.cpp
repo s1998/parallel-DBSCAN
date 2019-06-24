@@ -81,3 +81,5 @@ int main(int argc, const char** argv)
   // timeit(clusterer2, points, "Naive Range search serial");
 
 }
+
+// Speedup using 36 cores : 124 / 9.41 = 13.177
